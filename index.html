@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on developer's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css file -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- responsive css file -->
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+  <!-- main container -->
+  <main class="container">
+
+    <!-- Developer 1 Profile Section -->
+    <section class="container__developer-profile container__developer1-profile">
+      <!-- profile data in flex for developer1 -->
+      <div class="container__developer-profile-data">
+        <!-- developer comment and info -->
+        <div class="container__developer-comment-info">
+          <!-- developer comment -->
+          <p class="container__developer-comment">
+            <img src="./images/pattern-quotes.svg" alt="quotes-pattern" class="container__quotes-img">
+            “ I’ve been interested in coding for a while but never taken the jump, until now. 
+              I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+              excited about the future. ”
+          </p>
+          <!-- developer information -->
+          <div class="container__developer-info">
+            <p class="container__developer-name">Tanya Sinclair</p>
+            <p class="container__developer-role">UX Engineer</p>
+          </div>
+        </div>
+        <!-- image part inside the container -->
+        <div class="container__developer-image-section">
+          <!-- developer profile image -->
+          <img src="./images/image-tanya.jpg" alt="Tanya Sinclair" class="container__developer-image">
+          <!-- bg for develoepr profile image -->
+          <img src="./images/pattern-bg.svg" alt="background pattern" class="container__developer-bg-img">
+          <!-- button for switching -->
+          <button class="container__btn-switch" id="container__btn-switch-developer1">
+            <img src="./images/icon-prev.svg" alt="previous" class="container__icon-prev">
+            <img src="./images/icon-next.svg" alt="next" class="container__icon-next">
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Developer 2 Profile Section -->
+    <section class="container__developer-profile container__developer2-profile display-none">
+
+      <div class="container__developer-profile-data">
+
+        <div class="container__developer-comment-info">
+          <p class="container__developer-comment">
+            <img src="./images/pattern-quotes.svg" alt="quotes-pattern" class="container__quotes-img">
+            “ If you want to lay the best foundation possible I’d recommend taking this course. 
+            The depth the instructors go into is incredible. I now feel so confident about 
+            starting up as a professional developer. ”
+          </p>
+          <div class="container__developer-info">
+            <p class="container__developer-name">John Tarkpor</p>
+            <p class="container__developer-role">Junior Front-end Developer</p>
+          </div>
+        </div>
+
+        <div class="container__developer-image-section">
+          <img src="./images/pattern-bg.svg" alt="background pattern" class="container__developer-bg-img">
+          <img src="./images/image-john.jpg" alt="John Tarkpor" class="container__developer-image">
+          <button class="container__btn-switch " id="container__btn-switch-developer2">
+            <img src="./images/icon-prev.svg" alt="previous" class="container__icon-prev">
+            <img src="./images/icon-next.svg" alt="next" class="container__icon-next">
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <!-- script code -->
+<script src="./script.js"></script>
+</body>
+</html>
